@@ -77,10 +77,18 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Section Item 1.4</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Section Item 1.5</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Section Item 1.6</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Sistema Colaborativo</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Section Item 2.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Section Item 2.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Section Item 2.3</a></li>
+				    <li class="nav-item section-title mt-3">
+				    	<a class="nav-link scrollto" href="#section-2">
+				    		<span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Sistema Colaborativo</a>
+				    </li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Data a usarse</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Actualizacion de la Informacion</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Promediar la Informacion</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Coeficiente de Person</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Calculos de recomendacion</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">Imprimir las recomendaciones</a></li>
+
+
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2</a></li>
@@ -105,9 +113,9 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>Ingresar al Servidor</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Ingresar a la VPN</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Procesos en Segundo Plano</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
 			    </ul>
 
@@ -359,13 +367,61 @@
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-2-2">
-						<h2 class="section-heading">Section Item 2.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Actualizacion de la informacion</h2>
+						<p>ingresar al archivo update_data.py</p>
+						
+						<img src="img/ruta_update_date.png" class="img-fluid" alt="Responsive image">
+						<p>este archivo se encuentra configurado en el crontab para ejecutarse todos los dias y actualizar la ultima informacion</p>
+						<p>en la linea 114 (puede variar si se mueve el codigo) , en la variable days se define 60 dias (2 meses) </p>
+						<img src="img/days_colaborative.png" class="img-fluid" alt="Responsive image">
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-2-3">
-						<h2 class="section-heading">Section Item 2.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Promediar la Informacion</h2>
+						<p>La que vamos ah observar es que vamos a tener  informacion repetida por ejemplo de un mismo cliente al largo del mes puede tener compras del mismo producto lo que se hace es hacer un promedio para tener informacion unica por cliente y producto.</p>
+						<img src="img/promedio_colab.png" class="img-fluid" alt="Responsive image">
+
+						<p>En codigo esta informacion promediada se guarda en "mean_pedidos_mes.joblib" para luego ser usado</p>
+						<img src="img/mean_pedidos_colab.png" class="img-fluid" alt="Responsive image">
+						
+
+
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">Coeficiente de Person</h2>
+						<img src="img/person.png" class="img-fluid" alt="Responsive image">
+						
+						<p>se usara el coeficiente de person para calcular la similitud entre los usuarios, por lo cual habra comparar la cantidad comprada, es por ello que se realizara un agrupamiento x cliente y se compara los productos similares</p>
+					
+						<img src="img/person_code.png" class="img-fluid" alt="Responsive image">
+
+						<p>al final de realizar estos calculos obtendremos una array con el coeficiente person por cliente</p>
+						<img src="img/person_customer.png" class="img-fluid" alt="Responsive image">
+
+						
+						
+						
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-5">
+						<h2 class="section-heading">Calculos de recomendacion</h2>
+						<p>lo que sigue es realizar calculos matriciales para recomendar otros productos , comenzando con calculos los 50 usuarios que tengan el coeficeinte person lo mas cercano a uno.</p>
+						<img src="img/listop_person.png" class="img-fluid" alt="Responsive image">
+						<p>luego de estos clientes se busca sus productos y se multiplica el coeficiente * la cantidad</p>
+						<img src="img/cal_colab1.png" class="img-fluid" alt="Responsive image">
+						<p>luego hay que sumar los indices  x producto y realizar el promedio</p>
+						<img src="img/cal_colab2.png" class="img-fluid" alt="Responsive image">
+						<p>de aqui sacamos los mas puntuados</p>
+
+						
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-6">
+						<h2 class="section-heading">Imprimir las Recomendaciones</h2>
+						<p>Finalmente ya la lsita de los productos mas puntuados solo tendria que imprimirse en pantalla los nombre de los productos , es lo que se reflejado en el api como una lista de nombre de productos</p>
+						<img src="img/lista_productos.jpeg" class="img-fluid" alt="Responsive image">
+						
 					</section><!--//section-->
 			    </article><!--//docs-article-->
 			    
@@ -514,33 +570,48 @@
 			    
 			    <article class="docs-article" id="section-9">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">FAQs</h1>
+					    <h1 class="docs-heading">Ingresar al servidor</h1>
 					    <section class="docs-intro">
-						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
+						    <p>pasos para ingresar al servidor</p>
 						</section><!--//docs-intro-->
 				    </header>
 				     <section class="docs-section" id="item-9-1">
-						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+						<h2 class="section-heading">Ingresar a la VPN</h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Logearse en WatchGuard</h5>
+						<img src="img/vpn.png" class="img-fluid" alt="Responsive image">
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Ingresar con Putty</h5>
+						<img src="img/putty.png" class="img-fluid" alt="Responsive image">
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Ingresar a la carpeta raiz</h5>
+						<p>cd  /home/gwyadmin/svr_integ_artificial/recommendation_IA  </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>ACTIVAR PYTHON VERSION 3.10</h5>
+						<p>conda activate python310</p>
+
+						
+						
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-9-2">
-						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+						<h2 class="section-heading">Procesos en Segundo Plano</small></h2>
+						
+						<p>PARA LOS PROCESOS EN SEGUNDO PLANO USAREMOS TMUX</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Listar ventanas activas</h5>
+						<p>tmux ls</p>
+						<img src="img/tmuxls.png" class="img-fluid" alt="Responsive image">
+
+
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>tmux attach -t yichang</h5>
+						<p>Esta comando lo que hace es ingresar a la sesion donde se ejecutando el api del webservices</p>
+						<img src="img/tmuxyichang.jpeg" class="img-fluid" alt="Responsive image">
+						<p>para salir de la sesion con el comando:  tmux detach</p>
+
+
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>tmux attach -t regre</h5>
+						<p>Esta comando lo que hace es ingresar a la sesion donde ejecutaras la actualizacion de los modelos de regresion</p>
+						<p>para salir de la sesion con el comando:  tmux detach</p>
+						
+
+
+						
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-9-3">
